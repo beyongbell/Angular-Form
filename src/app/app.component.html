@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span> Angular Form </span>
+      <span class="example-spacer"></span>
+      <a routerLink="/form"  mat-button>Form</a>
+      <a routerLink="/group" mat-button>Group</a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-content class="container">
+        <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
