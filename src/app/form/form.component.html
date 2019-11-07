@@ -1,0 +1,13 @@
+<p>
+  Name : <input type="text" [formControl]="name">
+</p>
+<p>
+  name: {{ name.value }}
+    </p>
+<br>
+<input type="button" value="Set Default" (click)="setDefaultValue()">
+
+<p>
+  Name : <input type="text" [(ngModel)]="test" name="test">
+</p>
+{{ test }}
