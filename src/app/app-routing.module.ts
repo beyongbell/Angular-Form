@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GroupComponent } from './group/group.component';
 import { FormComponent } from './form/form.component';
+import { BuilderComponent } from './builder/builder.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,9 @@ const routes: Routes = [
   },
   {
     path: 'form' , component: FormComponent
+  },
+  {
+    path: 'builder' , component: BuilderComponent
   }
 ];
 
