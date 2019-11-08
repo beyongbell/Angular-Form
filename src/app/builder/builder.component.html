@@ -14,5 +14,13 @@
     <input type="text" formControlName="zip">
     <br>
   </div>
+  <div formArrayName="mobiles">
+    <h3>Enter Mobile Number </h3>
+    <button (click)="addNewMobile()"> Add New Mobile </button>
+    <div *ngFor="let mob of mobiles.controls; let i = index">
+      <label for="mobile"> Mobile {{ i + 1}} </label>
+      <input type="text" [formControlName]="i">
+    </div>
+  </div>
   <button type="submit" [disabled]="!userForm.valid">Submit</button>
 </form>

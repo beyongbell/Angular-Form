@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-builder',
@@ -16,7 +17,10 @@ export class BuilderComponent implements OnInit {
     address  : this.fb.group({
       city : [''],
       zip  : ['']
-    })
+    }),
+    mobiles: this.fb.array([
+      this.fb.control('')
+    ])
   });
 
   ngOnInit() {
@@ -29,6 +33,19 @@ export class BuilderComponent implements OnInit {
     console.log(this.userForm.get('firstName').value);
     console.log(this.userForm.get(['address', 'city']).value);
     console.log(this.userForm.get('address').get('city').value);
+
+    console.log(this.userForm.controls.mobiles.value);
+    console.log(this.userForm.controls.mobiles.value[0]);
+    console.log(this.userForm.get(['mobiles', '0']).value);
+    console.log(this.userForm.get('mobiles').get('0').value);
+  }
+
+  get mobiles() {
+    return this.userForm.get('mobiles') as FormArray;
+  }
+
+  addNewMobile() {
+    this.mobiles.push(this.fb.control(''));
   }
 
 }
