@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { GroupComponent } from './group/group.component';
-import { FormComponent } from './form/form.component';
+import { ControlComponent } from './control/control.component';
 import { BuilderComponent } from './builder/builder.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
   declarations: [
     AppComponent,
     GroupComponent,
-    FormComponent,
+    ControlComponent,
     BuilderComponent
   ],
   imports: [

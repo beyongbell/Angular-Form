@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
+
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  selector: 'app-control',
+  templateUrl: './control.component.html',
+  styleUrls: ['./control.component.scss']
 })
-export class FormComponent implements OnInit {
+export class ControlComponent implements OnInit {
 
   title = 'Angular-Form';
   name = new FormControl('Tinnakorn Choompee');

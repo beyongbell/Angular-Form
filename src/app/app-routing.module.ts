@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GroupComponent } from './group/group.component';
-import { FormComponent } from './form/form.component';
+import { ControlComponent } from './control/control.component';
 import { BuilderComponent } from './builder/builder.component';
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'group' , component: GroupComponent
   },
   {
-    path: 'form' , component: FormComponent
+    path: 'form' , component: ControlComponent
   },
   {
     path: 'builder' , component: BuilderComponent
