@@ -1,1 +1,18 @@
-<p>builder works!</p>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="firstName"> FirstName </label>
+  <input type="text" formControlName="firstName">
+  <br>
+  <label for="lastName"> LastName </label>
+  <input type="text" formControlName="lastName">
+  <br>
+  <div formGroupName="address">
+    <label for="email"> City </label>
+    <input type="text" formControlName="city">
+    <br>
+    <br>
+    <label for="email"> Zip </label>
+    <input type="text" formControlName="zip">
+    <br>
+  </div>
+  <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
