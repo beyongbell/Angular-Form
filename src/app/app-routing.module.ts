@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { GroupComponent } from './group/group.component';
 import { ControlComponent } from './control/control.component';
 import { BuilderComponent } from './builder/builder.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {
@@ -12,10 +13,13 @@ const routes: Routes = [
     path: 'group' , component: GroupComponent
   },
   {
-    path: 'form' , component: ControlComponent
+    path: 'control' , component: ControlComponent
   },
   {
     path: 'builder' , component: BuilderComponent
+  },
+  {
+    path: 'form' , component: FormComponent
   }
 ];
 

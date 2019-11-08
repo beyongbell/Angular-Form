@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     GroupComponent,
     ControlComponent,
-    BuilderComponent
+    BuilderComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
